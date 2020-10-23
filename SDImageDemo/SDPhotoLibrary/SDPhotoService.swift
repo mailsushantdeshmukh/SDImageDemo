@@ -13,7 +13,7 @@ let api_key = "3aaeaf09d9e52f7176b08551731ad5b6"
 let secret = "abe8bd114ca9289f"
 
 enum SDPhotoService {
-    case getRecent
+    case getRecentInPune
     case searchPhotos(text:String)
 }
 extension SDPhotoService: BaseService{
@@ -21,7 +21,7 @@ extension SDPhotoService: BaseService{
         switch self {
         case .searchPhotos:
             return "/searchPhotos.json"
-        case .getRecent:
+        case .getRecentInPune:
             return "/recentPhotos.json"
         }
     }
@@ -37,7 +37,7 @@ extension SDPhotoService: BaseService{
     
     var path: String {
         switch self {
-        case .getRecent,
+        case .getRecentInPune,
              .searchPhotos:
             return  "/rest"
         }
@@ -45,16 +45,16 @@ extension SDPhotoService: BaseService{
     
     var restMethod: String {
         switch self {
-        case .getRecent:
-            return  "flickr.photos.getrecent"
-        case .searchPhotos:
+        // "flickr.photos.getrecent"
+        //Removed this link due as it showing some wrong pics
+        case .getRecentInPune, .searchPhotos :
             return  "flickr.photos.search"
         }
     }
     
     var httpMethod: HTTPMethod {
         switch self {
-        case .getRecent,
+        case .getRecentInPune,
              .searchPhotos:
             return .get
         }
@@ -67,7 +67,8 @@ extension SDPhotoService: BaseService{
         switch self {
         case let .searchPhotos(text: text):
             params["text"] = text
-        case  .getRecent: break
+        case  .getRecentInPune: 
+             params["text"] = "Pune"
         }
         return params
     }

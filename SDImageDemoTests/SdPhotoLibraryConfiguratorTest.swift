@@ -13,7 +13,7 @@ import CommonCode
 class SdPhotoLibraryConfiguratorTest: XCTestCase {
     func testConfigure() {
         let config = SDPhotoLibraryConfiguartion()
-        let configurator = SDPhotoLibraryConfiguartator()
+        let configurator = SDPhotoLibraryConfiguarator()
         guard let viewController
             = configurator.configure(configuration: config) as? SDPhotoLibraryViewControllerContract else {
                 XCTFail("Wrong ViewController")

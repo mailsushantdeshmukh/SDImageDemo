@@ -15,7 +15,7 @@ class SDPhotoLibraryInteractor: SDPhotoLibraryInteractorContract {
     func loadRecentPhotos() {
         CacheHandler.sharedHandler.setupCache(memoryInMB: 100, diskCapacityInMB: 100)
         presenter?.startLoading()
-        let serviceProvider = ServiceProvider<SDPhotoService>(service: .getRecent)
+        let serviceProvider = ServiceProvider<SDPhotoService>(service: .getRecentInPune)
         serviceProvider.response { [weak self] (data, error) in
             guard let self = self else { return }
             self.presenter?.stopLoading()
