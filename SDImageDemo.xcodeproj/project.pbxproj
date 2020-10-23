@@ -64,7 +64,6 @@
 		85D4B7322541BC3E00F677F5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D992EA2540A55D0053E779 /* Protocols.swift */; };
 		85D4B7332541BD7C00F677F5 /* StoryBoardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D992F425414F990053E779 /* StoryBoardBased.swift */; };
 		85D4B7342541BD8700F677F5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D992EC2540A70A0053E779 /* BaseViewController.swift */; };
-		85D4B7362541BDB000F677F5 /* ImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8548ED17254182430083B452 /* ImageView+Download.swift */; };
 		85D4B7372541BE2800F677F5 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873A1725405A6C00F02D08 /* ServiceProvider.swift */; };
 		85D4B7382541BE5C00F677F5 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D992E6254095370053E779 /* BaseService.swift */; };
 		85D4B73A2541C1D200F677F5 /* CommonCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D4B7142541BAE800F677F5 /* CommonCode.framework */; };
@@ -149,7 +148,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8548ED17254182430083B452 /* ImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Download.swift"; sourceTree = "<group>"; };
 		8548ED1925418CA80083B452 /* CacheHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHandler.swift; sourceTree = "<group>"; };
 		8548ED1C254192260083B452 /* PhotoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloader.swift; sourceTree = "<group>"; };
 		8548ED1E254192D00083B452 /* CacheHandlerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHandlerContract.swift; sourceTree = "<group>"; };
@@ -326,7 +324,6 @@
 				859B516D25404A3A00A095A7 /* Entity */,
 				85D4B73C2541D05900F677F5 /* ViewModels */,
 				859B517525404D5500A095A7 /* DomainModels */,
-				85D4B73B2541D03100F677F5 /* Extension */,
 				85F12245254060B500AAE270 /* SDPhotoLibrary */,
 				859B5128253F4F6300A095A7 /* AppDelegate.swift */,
 				859B512A253F4F6300A095A7 /* SceneDelegate.swift */,
@@ -443,14 +440,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		85D4B73B2541D03100F677F5 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				8548ED17254182430083B452 /* ImageView+Download.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		85D4B73C2541D05900F677F5 /* ViewModels */ = {
@@ -757,7 +746,6 @@
 			files = (
 				859B516F25404B5B00A095A7 /* PhotoEntity.swift in Sources */,
 				859B517325404C2400A095A7 /* PhotoPageEntity.swift in Sources */,
-				85D4B7362541BDB000F677F5 /* ImageView+Download.swift in Sources */,
 				859B517D25404DBA00A095A7 /* PhotoModel.swift in Sources */,
 				85F122472540621B00AAE270 /* SDPhotoLibraryConfiguartion.swift in Sources */,
 				859B512D253F4F6300A095A7 /* SDPhotoLibraryViewController.swift in Sources */,

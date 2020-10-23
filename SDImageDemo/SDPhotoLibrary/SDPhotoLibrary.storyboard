@@ -69,7 +69,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="canelButton" destination="TSl-Nr-eqR" id="DcB-V9-kSa"/>
+                                            <outlet property="cancelButton" destination="TSl-Nr-eqR" id="O9a-9z-sdh"/>
                                             <outlet property="imageView" destination="9Sr-Su-8Dz" id="pCD-HV-kgr"/>
                                         </connections>
                                     </collectionViewCell>
