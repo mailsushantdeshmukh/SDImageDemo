@@ -16,7 +16,7 @@ class SDPhotoServiceTest: XCTestCase {
     }
     
     func testGetRecent(){
-        let service = SDPhotoService.getRecent
+        let service = SDPhotoService.getRecentInPune
         XCTAssertTrue(service.mockName == "/recentPhotos.json")
         XCTAssertTrue(service.host == "https://www.flickr.com/services")
         XCTAssertTrue(service.path == "/rest")
